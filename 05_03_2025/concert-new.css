@@ -1,13 +1,22 @@
 body {
     font-family: 'Montserrat','Roboto', sans-serif;
+    background-color: rgb(10, 30, 45);
 }
 
 body::before {
     z-index: -1;
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 30, 45);
 }
 
 #container {
     display: flex;
+    justify-content: center;
 }
 
 .concert{
@@ -39,6 +48,10 @@ body::before {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
   
+}
+
+.card{
+    background-position: center;
 }
 
 
@@ -78,6 +91,15 @@ body::before {
     background-image: url('img/carnaval_1.png');
 }
 
+aside::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 aside {
    
     border-radius: 0.5rem; 
@@ -87,5 +109,19 @@ aside {
     color: white;
     padding: 1rem;
    
+}
+
+aside button{
+    background-color: #f44336;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+aside button:hover {
+    background-color: #161515;
 }
 
