@@ -125,3 +125,9 @@ aside button:hover {
     background-color: #161515;
 }
 
+@media screen  and (max-width: 768px) {
+    body::before{
+        background-color: rgb(43, 95, 168);
+    }
+}
+
