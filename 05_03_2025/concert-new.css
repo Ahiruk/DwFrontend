@@ -10,6 +10,12 @@ body::before {
     display: flex;
 }
 
+.concert{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
 .concert .card {
     margin: 10px;
     width: 200px;
@@ -37,11 +43,21 @@ body::before {
 
 
 .card .text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    justify-content: space-between;
     color: white;
    z-index: 1;
    position: relative;
 }
 
+.card .text ul {
+    list-style: none;
+    padding: 0;
+   
+}
 #metro {
     background-image: url('img/metro-concierto.jpg');
 }
